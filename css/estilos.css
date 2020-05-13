@@ -1,0 +1,38 @@
+body {
+    background-image: url(https://img.freepik.com/vetores-gratis/fundo-desfocado-colorido-feito-com-malha-de-gradiente_105895-545.jpg?size=626&ext=jpg);
+    background-size: auto 100vh;
+    font-family: Arial;
+    height: 100vh;
+  }
+  
+  .menu {
+    background-color: white;
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .menu li {
+    list-style: none;
+  }
+  
+  a {
+    color: teal;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .site-subtitle,
+  .site-title {
+    color: whitesmoke;
+    text-align: center;
+  }
+  
+  .site-subtitle {
+   font-style: italic;
+  }
