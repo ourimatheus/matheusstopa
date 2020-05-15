@@ -6,10 +6,10 @@
 }
 
 body {
-    background-image: url('../img/fundo.jpg');
+    background-image: url(../img/fundo.jpg);
     background-size: auto 100vh;
     font-family: 'Roboto', sans-serif;
-    height: 100vh;
+    height:auto 100vh;
     font-size: 12px;
   }
 
@@ -123,9 +123,14 @@ body {
     text-align: center;
   }
 
+  /* se for mudar a background do portfolio
+  .portfolio {
+    background-color: darkseagreen;
+  } */
+
   .img-portfolio {
     height: 180px;
     width: 240px;
     object-fit: cover;
-    object-position: bottom left;
+    object-position: center;
   }
