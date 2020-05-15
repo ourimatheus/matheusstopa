@@ -46,6 +46,7 @@ body {
     position: fixed;
     width: 100vw;
     top: 0;
+    z-index: 1;
   }
   
   .menu ul {
@@ -60,6 +61,12 @@ body {
   .menu a {
     display: block;
     padding: 10px 20px;
+    transition: background-color 1s, color 1s;
+  }
+
+  .menu a:hover {
+    background-color: teal;
+    color: white;
   }
   
   a {
@@ -69,6 +76,24 @@ body {
   
   a:hover {
     text-decoration: underline;
+  }
+
+  .titulo {
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+    
+    animation: linear 1s animacaoTitulo forwards;
+  }
+
+  @keyframes animacaoTitulo {
+    from {
+      transform: scale(0.2) translateY(50vh);
+      opacity: 0;
+    }  
+    to {
+        transform: scale(1) translateY(0);
+      opacity: 1;
+    }
   }
   
   .site-subtitle,
@@ -87,11 +112,13 @@ body {
    font-family: 'Fredoka One', cursive;
   }
 
+  .contato,
   .portfolio {
-    padding: 1.5em;
-    height: 100vh;
+    padding: 2em;
+    min-height: 100vh;
   }
 
+  .contato h2,
   .portfolio h2 {
     color: whitesmoke;
     font-family: 'Source Code Pro', monospace;
@@ -133,4 +160,25 @@ body {
     width: 240px;
     object-fit: cover;
     object-position: center;
+    transition: transform 500ms;
   }
+
+  .img-portfolio:hover {
+    transform: scale(1.2) rotate(5deg);
+  }
+
+.contato .icons {
+  text-align: center;
+}
+
+  .contato a {
+  color: whitesmoke;
+  font-size: 6em;
+  transition: text-shadow 1s;
+}
+
+.contato a:active,
+.contato a:hover {
+  text-decoration: none;
+  text-shadow: whitesmoke 0px 0px 15px;
+}
