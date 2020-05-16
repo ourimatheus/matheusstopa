@@ -112,12 +112,22 @@ body {
    font-family: 'Fredoka One', cursive;
   }
 
+  .sobre,
   .contato,
   .portfolio {
     padding: 2em;
     min-height: 100vh;
   }
 
+  @media (min-width: 1200px) {
+    .container {
+      margin-left: auto;
+      margin-right: auto;          
+      max-width: 1200px;
+    }
+  }
+
+  .sobre h2,
   .contato h2,
   .portfolio h2 {
     color: whitesmoke;
@@ -126,6 +136,37 @@ body {
     font-size: 2em
   }
 
+  .sobre p {
+    color: whitesmoke;
+    margin-bottom: 1.2em;
+    text-indent: 1.4em;
+    text-align: justify;
+  }
+
+  .sobre a {
+    color: whitesmoke;
+    text-decoration: underline;
+  }
+
+  .sobre a:hover {
+    background-color: cyan;
+    text-decoration: none;
+  }
+
+  .sobre .avatar {
+    margin-left: 2em;
+  }
+
+  .sobre .avatar img {
+    border-radius: 50%;
+  }
+
+  @media (min-width: 600px) {
+    .sobre .avatar{
+    float: right;
+    } 
+  }
+  
   .portfolio .grid {
     display: grid;
     gap: 2em;
@@ -153,8 +194,8 @@ body {
   /* se for mudar a background do portfolio
   .portfolio {
     background-color: darkseagreen;
-  } */
-
+  }
+  */
   .img-portfolio {
     height: 180px;
     width: 240px;
