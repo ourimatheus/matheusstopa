@@ -16,7 +16,7 @@
   }
 
  /* se a tela tiver pelo menos 400px vai carregar estes estilos */
- @media (min-width: 400px) {
+ @media (min-width: 300px) {
    body {
      font-size: 18px;
    }
@@ -219,9 +219,22 @@
    align-content: center;
  }
 
+ @media (min-width: 300px) {
+   .portfolio .grid {
+    height: calc(170vh - 11em - 48px);
+   }
+ }
+
+ @media (min-width: 400px) {
+   .portfolio .grid {
+    height: calc(150vh);
+   }
+ }
+
  @media (min-width: 560px) {
    .portfolio .grid {
    grid-template-columns: 240px 240px;
+   height: calc(100vh - 11em - 48px);
    }
  }
 
@@ -300,6 +313,12 @@
  }
 
  @media (min-width: 400px) {
+  .contato a {
+    font-size: 4em;
+   }
+ }
+
+ @media (min-width: 300px) {
   .contato a {
     font-size: 4em;
    }
