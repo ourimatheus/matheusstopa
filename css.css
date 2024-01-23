@@ -18,32 +18,24 @@
  /* se a tela tiver pelo menos 400px vai carregar estes estilos */
  @media (min-width: 400px) {
    body {
-     font-size: 14px;
+     font-size: 18px;
    }
  }
 
  /* se a tela tiver pelo menos 600px vai carregar estes estilos */
  @media (min-width: 600px) {
-   .grid {
-     padding-top: 15em;
-     margin-bottom: 15em;
-   }
    .portfolio h2 {
      padding-top: 1em;
    }
- }
-
- /* se a tela tiver pelo menos 1000px vai carregar estes estilos */
- @media (min-width: 1370px) {
-   .grid, .portfolio h2{
-     padding-top: 0em;
+   body {
+     font-size: 18px;
    }
  }
 
- /* se a tela tiver pelo menos 600px vai carregar estes estilos */
- @media (min-width: 600px) {
-   body {
-     font-size: 18px;
+ /* se a tela tiver pelo menos 1370px vai carregar estes estilos */
+ @media (min-width: 1370px) {
+   .grid, .portfolio h2{
+     padding-top: 0em;
    }
  }
 
@@ -51,9 +43,6 @@
  @media (min-width: 1200px) {
    body {
      font-size: 20px;
-   }
-   .grid {
-     margin-top: -7em;
    }
  }
 
@@ -168,8 +157,10 @@
  .portfolio h2 {
    color: whitesmoke;
    font-family: 'Source Code Pro', monospace;
-   margin-bottom: 45px;
-   font-size: 2em
+   font-size: 2em;
+   border-bottom-width: 100px;
+   border-bottom: 100px;
+   border: 100px;
  }
 
  .contato h2 {
@@ -202,8 +193,9 @@
  }
 
  .sobre a:hover {
-   background-color: black;
+   background-color: pink;
    text-decoration: none;
+   color: red;
  }
 
  .sobre .avatar {
@@ -223,6 +215,8 @@
  .portfolio .grid {
    display: grid;
    gap: 2em;
+   justify-content: center;
+   align-content: center;
  }
 
  @media (min-width: 560px) {
@@ -234,9 +228,16 @@
  @media (min-width: 880px) {
    .portfolio .grid {
    grid-template-columns: 260px 260px 260px;
+   height: calc(75vh - 11em - 48px);
+   }
+ }
+
+ @media (min-width: 1200px) {
+   .portfolio .grid {
+   grid-template-columns: 260px 260px 260px;
    justify-content: center;
    align-content: center;
-   height: calc(100vh - 11em - 48px);
+   height: calc(80vh - 11em - 48px);
    }
  }
 
@@ -254,7 +255,34 @@
    width: 240px;
    object-fit: cover;
    object-position: center;
-   transition: transform 500ms;
+   transition: transform 500ms; 
+ }
+
+ @media (min-width: 300px) {
+  .imgavatar {
+   width: 215px;
+  }
+ }
+
+ @media (min-width: 400px) {
+  .imgavatar {
+   width: 315px;
+  }
+  .contato a {
+    font-size: 2em;
+   }
+ }
+
+ @media (min-width: 500px) {
+  .imgavatar {
+   width: 415px;
+  }
+ }
+
+ @media (min-width: 600px) {
+  .imgavatar {
+   width: 515px;
+  }
  }
 
  .img-portfolio:hover {
@@ -269,6 +297,12 @@
   color: whitesmoke;
   font-size: 6em;
   transition: text-shadow 1s;
+ }
+
+ @media (min-width: 400px) {
+  .contato a {
+    font-size: 4em;
+   }
  }
 
  .contato a:active,
@@ -289,4 +323,22 @@
    font-size: 20px;
  }
 
-/*fim do css*/
+ @media (min-width: 880px) {
+  .contato a {
+      font-size: 6em;
+  }
+ }
+
+ @media (max-height: 900px) {
+  .grid{
+    padding-top: 100px;
+   }
+ }
+
+ @media (max-height: 790px) {
+  .grid{
+    padding-top: 200px;
+   }
+ }
+
+ /*fim do css*/
