@@ -1,3 +1,3 @@
 # matheus stopa
-Site com html e css, feito durante e pós a imersão css da alura
+Site com html e css, feito de brincadeira
 https://ourimatheus.github.io/matheusstopa
